@@ -3,23 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            color:rgb(255, 0, 0);
-        }
-        p{
-            color:rgb(0, 0, 255);
-        }
-        button{
-            color: rgb(0,255,0);
-        }
-    </style>
+    <title>restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+    margin: 0;
+    border: 0;
+    font-family:"M PLUS Rounded 1c", serif;;
+}
+body{
+    overflow: hidden;
+}
+.banner{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color:rgba(0,0,0,0.2)
+}
+video{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.search{
+    background-color: white;
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+input{
+    font-size: 18px;
+    width: 550px;
+    outline: none;
+}
+h1{
+    font-size: 60px;
+}
+i{
+    background-color: red;
+    padding: 6px 20px;
+    border-radius: 10px;
+    font-size:25px
+}
+</style>
 </head>
 <body>
-    <h1>text 1</h1>
-    <h1>text 2</h1>
-    <p>this is para</p>
-    <button>submit</button>
+    <div class="banner">
+        <h1>RESTAURANT</h1>
+        <p>Discover the best food & drinks in India</p>
+        <div class="search">
+            <input type="search" placeholder="search for restaurant">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <video src="FOOD.mp4.mp4" loop autoplay muted></video>
 </body>
 </html>
