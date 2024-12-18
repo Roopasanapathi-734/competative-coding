@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*universal selector---it is used to target whole document in on go 
+
+        *{                                 
+              color: red;
+            font-style: italic;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        */
+        /* type selector--
+
+             h1{
+               color: green;
+            }
+            p{
+               color:red;
+            }
+            h4{ 
+               color: blue;
+               font-style: italic;
+            }
+        */
+        /* id selector*/
+        /*#heading1{
+            color: red;
+        }
+        #heading2{
+            color:green;
+            font-style: italic;
+            text-align: center;
+        }
+        .para{
+            color: blue;
+            font-weight: bolder;
+            font-size: 45px;
+        }*/
+/*h1,p{
+    color: red;
+}*/
+/*div p{
+    color: red;
+}*/
+/*span {
+            background-color: aqua;
+          }
+          
+          div > span {
+            background-color: yellow;
+          }
+p {
+  color: red;
+}
+
+div > p {
+  background-color: yellow;
+}*/
+/* h1+p---selecting first para*/
+/* h1+p+p---selecting second para*/
+/* h1+p+p+p---selecting third para*/
+/*h1 + p + p + p {
+   font-style: italic;
+   color: red;
+}*/
+/*h1:hover{
+    color: red;
+    font-style: italic;
+}
+button{
+    padding: 7px 35px;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+button:hover{
+    background-color: red;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    padding: 15px 60px;
+}*/
+/*a:visited{
+    color: red;
+}*/
+/*a:hover {
+  background: yellow;
+}
+/* Active links */
+/*a:active {
+  color: red;
+}
+p:active{
+    background: #eee;
+}*/
+[placeholder]{
+    color: red;
+    border: 2px solid green;
+}
+input[type="text"]{
+    border: 5px solid red;
+    margin:10px ;
+    border: 1px solidgreen;
+    border-radius: 12px;
+}
+</style>
+</head>
+<body>
+    <!---<h1 id="heading1">this is demo </h1>
+    <h1 id="heading2">this is demo</h1>
+    <h1>this is demo</h1>
+    <p class="para">this is para</p>
+    <p>this is demo</p>--->
+    <div>
+        <!---<span>
+            Span #1, in the div.
+            <span>Span #2, in the span that's in the div.</span>
+          </span>
+          <span>Span #3, not in the div at all.</span>--->
+        <!---<p>this is direct child that we will target</p>
+        <div>
+            <p>this is nested child div</p>
+        </div>
+    </div>--->
+    <!---<p>this is p tag outside a div</p>--->
+    <!--- h1 isadjacent siblings-->
+    <!---p is general siblings-->
+    <!---<h1>heading</h1>-->
+    <!--<p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>-->
+    <!---<button>submit</button>-->
+    <!---<p>
+        This paragraph contains a link:<a href="#">This link will turn red while you click on it.</a> The paragraph will get a gray background while you click on it or the link.
+    </p>--->
+    <!--attribute selector -->
+    <!---<input type="text" placeholder="enter your name"/>--->
+    <!---<a href="https://www.geeksforgeeks.org/batch/aitam-fs-1?tab=Live">this is text link</a>-->
+    <form>
+        <input type="text" placeholder="text enter">
+        <input type="password" placeholder="text enter">
+    </form>
+</body>
+</html>
